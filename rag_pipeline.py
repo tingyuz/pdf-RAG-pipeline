@@ -11,6 +11,7 @@ from nltk.tokenize import sent_tokenize
 
 # Download NLTK tokenizer data
 nltk.download('punkt')
+nltk.download('punkt-tab')
 
 # Configuration
 index_path = "faiss_index.index"
@@ -99,7 +100,7 @@ def query_with_ollama(query, index, chunks, embedding_model, llm_model, top_k=5)
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python rag_pipeline_with_ollama_embeddings.py <pdf_folder_path>")
+        print("Usage: python rag_pipeline.py <pdf_folder_path>")
         sys.exit(1)
 
     pdf_folder = sys.argv[1]
@@ -140,3 +141,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
