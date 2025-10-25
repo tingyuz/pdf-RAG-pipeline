@@ -1,6 +1,6 @@
 # pdf-RAG-pipeline
 
-The program will load pdf files from a specific folder, extract and chunk the text in a semantic-aware approach>
+The program will load pdf files from a specific folder, extract and chunk the text in a semantic-aware approach, then use it with llm to answer questions related to pdf files.
 
 1.
 ```
